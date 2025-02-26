@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movie.Api", "Movie.Api\Movie.Api.csproj", "{58050FE6-B1B5-4E2F-85C5-0FE4BCF93D91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movie.Application", "Movie.Application\Movie.Application.csproj", "{BF0F438C-31D1-4F08-BCDD-2754F0C50C0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movie.Contracts", "Movie.Contracts\Movie.Contracts.csproj", "{3E996CDA-3B02-4668-8D2E-9BB605FC888D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58050FE6-B1B5-4E2F-85C5-0FE4BCF93D91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58050FE6-B1B5-4E2F-85C5-0FE4BCF93D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58050FE6-B1B5-4E2F-85C5-0FE4BCF93D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58050FE6-B1B5-4E2F-85C5-0FE4BCF93D91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF0F438C-31D1-4F08-BCDD-2754F0C50C0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0F438C-31D1-4F08-BCDD-2754F0C50C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0F438C-31D1-4F08-BCDD-2754F0C50C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0F438C-31D1-4F08-BCDD-2754F0C50C0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E996CDA-3B02-4668-8D2E-9BB605FC888D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E996CDA-3B02-4668-8D2E-9BB605FC888D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E996CDA-3B02-4668-8D2E-9BB605FC888D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E996CDA-3B02-4668-8D2E-9BB605FC888D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
