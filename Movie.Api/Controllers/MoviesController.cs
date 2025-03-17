@@ -25,9 +25,12 @@ public class MoviesController : ControllerBase
     }
 
     [HttpGet(ApiEndpoints.Movies.Get)]
-    public async Task<IActionResult> GetMovieByGuid([FromRoute] Guid id)
+    public async Task<IActionResult> GetMovieByGuid([FromRoute] string idOrSlug)
     {
-        var movie = await _movieRepository.GetByIdAsync(id);
+        var movie = Guid.TryParse(idOrSlug, out var guid)
+            ? await _movieRepository.GetByIdAsync(guid)
+            : await _movieRepository.GetBySlugAsync(idOrSlug);
+
         if (movie == null)
             return NotFound();
         return Ok(movie.MapToMovieResponse());
