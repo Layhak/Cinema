@@ -35,4 +35,14 @@ public static class ContractMapping
         };
     }
 
+    public static Movie.Application.Models.Movie MapToMovie(this UpdateMovieRequest request,Guid id)
+    {
+        return new Movie.Application.Models.Movie()
+        {
+            Id = id,
+            Title = request.Title,
+            YearOfRelease = request.YearOfRelease,
+            Genres = request.Genres.ToList()
+        };
+    }
 }
